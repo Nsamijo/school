@@ -60,12 +60,12 @@ while som != 0:
     if som > 1:
         tempSound = som // base
         left = som - (tempSound * base)
-        convertedNum = convertedNum + str(left)
+        convertedNum = str(left) + convertedNum
         som = tempSound
     else:
         convertedNum = convertedNum + '1'
         som = 0
 
 #print out the results
-print(str(sound) + ' ' + str(base) + ' ' + str(convertedNum[::-1]))
+print(str(sound) + ' ' + str(base) + ' ' + str(convertedNum))
 
